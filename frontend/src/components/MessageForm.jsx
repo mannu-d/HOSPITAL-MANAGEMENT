@@ -14,7 +14,7 @@ const MessageForm = () => {
     try {
       await axios
         .post(
-          "https://hms-backend-deployment-1-8lm5.onrender.com/api/v1/message/send",
+          "http://localhost:4000/api/v1/message/send",
           { firstName, lastName, email, phone, message },
           {
             withCredentials: true,
